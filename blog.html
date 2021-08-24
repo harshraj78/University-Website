@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- -------------HEADER------------   -->
+
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo1.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+    <!-- ----------BLOG PAGE CONTENT----------  -->
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images/certificate.jpg" alt="" />
+          <h2>Our Certificate & Online Programs For 2021</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+            reprehenderit repudiandae deserunt nam fugiat dolore, autem
+            consequatur laudantium possimus error, voluptatem rem ipsum numquam
+            facere reiciendis alias iure! Repellendus, consequuntur!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            sapiente ullam modi dolore repudiandae deserunt distinctio omnis
+            quas culpa qui earum nihil nesciunt commodi, fugiat atque quia
+            soluta illo ratione similique est nobis, quod dolores labore? Illo,
+            eligendi similique autem quam nam nemo ex repellat aut accusamus
+            dolore, illum beatae! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Expedita, nam magni est enim quisquam, minima
+            cumque, deserunt accusamus illum consequuntur neque ipsam. Dolor,
+            dignissimos? Harum voluptates ea rem pariatur sed!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            accusamus quod dolor expedita debitis soluta ab exercitationem
+            labore, assumenda nihil officiis? Molestias unde rerum in ipsa
+            soluta magnam culpa nobis sed, earum, repudiandae magni consequuntur
+            quos eius eos porro ipsam adipisci veniam modi provident velit nihil
+            delectus! Aspernatur fugit iure mollitia accusantium consequuntur
+            commodi incidunt aliquam nobis culpa officia, pariatur rem suscipit
+            molestias, facere libero, perferendis perspiciatis. Laudantium,
+            omnis aut.
+          </p>
+          <br />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            quibusdam cumque sequi mollitia! Tempore quam, placeat illum
+            inventore ratione quasi, sint impedit perspiciatis, nulla voluptatem
+            labore officia necessitatibus? Aliquid, unde magnam incidunt dolore
+            illum culpa porro quaerat in earum repudiandae officia deleniti
+            officiis temporibus similique ducimus animi a voluptate omnis
+            tenetur ipsa est labore mollitia reiciendis. Iste quisquam
+            accusantium inventore.
+          </p>
+          <div class="comment-box">
+              <h3>Leave A Comment</h3>
+              <form class="comment-form">
+                  <input type="text" placeholder="Enter Name">
+                  <input type="text" placeholder="Enter E-mail">
+                  <textarea rows="5" placeholder="Your Comment"></textarea>
+                  <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+              </form>
+          </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Category</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Cmputer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>43</span>
+            </div>
+            <div>
+                <span>Law</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>31</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------FOOTER----------  -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas
+        repellendus reiciendis illo at <br />
+        fugiat excepturi molestiae! Doloremque asperiores eaque quos quo
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa fa-heart-o"></i> by Harsh Raj</p>
+    </section>
+
+    <!-- <! ---------JavaScript for Toggle Menu ---------  > -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
